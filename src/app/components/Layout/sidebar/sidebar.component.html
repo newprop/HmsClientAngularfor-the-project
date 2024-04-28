@@ -1,0 +1,98 @@
+<div class="sidebar" [ngClass]="{ 'showSidebar': isSidebarVisible, 'hideSidebar': !isSidebarVisible }" [@fadeInOut]>
+    <ul>
+        <li>
+            <!--  <a routerLinkActive="active" (click)="toggleSubmenu()">
+             <span class="menu-icon material-icons">dashboard</span>
+             <span class="menu-text">Dashboard</span>
+             <span class="sub-menu-icon" [ngClass]="{ 'sub-menu-open': isSubmenuOpen }">
+                 <mat-icon>{{ isSubmenuOpen ? 'keyboard_arrow_down' : 'keyboard_arrow_right' }}</mat-icon>
+             </span>
+         </a> -->
+            <!-- Sub-menu for Dashboard with left padding -->
+            <!--   <ul *ngIf="isSubmenuOpen" class="sub-menu">
+              <li>
+                  <a routerLink="/dashboard" routerLinkActive="active">
+                      <span class="menu-icon material-icons">details</span>
+                      <span class="menu-text">Details</span>
+                  </a>
+              </li>
+              <li>
+                  <a routerLink="/dashboard/messages" routerLinkActive="active">
+                      <span class="menu-icon material-icons">message</span>
+                      <span class="menu-text">Messages</span>
+                  </a>
+              </li>
+          </ul> -->
+        </li>
+        <li>
+            <a routerLink="/HomePage" routerLinkActive="active">
+                <span class="menu-icon material-icons"></span>
+                <span class="menu-text">Home</span>
+            </a>
+        </li>
+        <li>
+            <a routerLink="/DepartmentList" routerLinkActive="active">
+                <span class="menu-icon material-icons"></span>
+                <span class="menu-text">Department</span>
+            </a>
+        </li>
+        <li>
+            <a routerLink="/DoctorList" routerLinkActive="active">
+                <span class="menu-icon material-icons"></span>
+                <span class="menu-text">Doctor</span>
+            </a>
+        </li>
+        <!--   <li>
+          <a routerLinkActive="active" (click)="toggleSubmenu()">
+              <span class="menu-icon material-icons"></span>
+              <span class="menu-text">Dashboard</span>
+              <span class="sub-menu-icon" [ngClass]="{ 'sub-menu-open': isSubmenuOpen }">
+                  <mat-icon>{{ isSubmenuOpen ? 'keyboard_arrow_down' : 'keyboard_arrow_right' }}</mat-icon>
+              </span>
+          </a>
+          <ul *ngIf="isSubmenuOpen" class="sub-menu">
+              <li>
+                  <a routerLink="/DepartmentList" routerLinkActive="active">
+                      <span class="menu-icon material-icons"></span>
+                      <span class="menu-text">Details</span>
+                  </a>
+              </li>
+              <li>
+                  <a routerLink="/dashboard/messages" routerLinkActive="active">
+                      <span class="menu-icon material-icons">Department</span>
+                      <span class="menu-text">Messages</span>
+                  </a>
+              </li>
+          </ul>
+      </li> -->
+        <li>
+            <a routerLink="/settings" routerLinkActive="active">
+                <span class="menu-icon material-icons">settings</span>
+                <span class="menu-text">Setting</span>
+            </a>
+        </li>
+
+
+        <li>
+
+            <a routerLink="/AppointmentList" routerLinkActive="active">
+                <span class="menu-icon material-icons">AppointmentList</span>
+                <span class="menu-text">AppointmentList</span>
+            </a>
+
+
+
+
+            <!-- <a routerLink="/AppointmentList" class="nav-link">AppointmentList</a> -->
+        </li>
+
+
+
+
+        <li class="nav-item">
+            <a routerLink="/NurseList" class="nav-link">NurseList</a>
+        </li>
+
+
+    </ul>
+</div>
